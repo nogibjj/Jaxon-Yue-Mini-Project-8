@@ -1,14 +1,14 @@
 #[cfg(test)]
 mod tests {
     use caeser_cipher_cli::{decrypt, encrypt, to_all_caps};
-    
+
     #[test]
     fn test_encrypt_decrypt() {
-        let text = "Harry Xia";
+        let text = "Data";
         let shift = 3;
         let encrypted = encrypt(text, shift);
         let decrypted = decrypt(&encrypted, shift);
-        
+
         assert_eq!(text, decrypted);
     }
 

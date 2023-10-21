@@ -8,10 +8,13 @@ To decrypt:
 
 cargo run --  --message "Ypp dy dro lexuob. Ofobi zobcyx pyb drowcovfoc" --decrypt --shift 10
 
+To convert to all caps:
+
+cargo run -- --message "Hello, World!" --caps
+
 */
 
-
-use caeser_cipher_cli::{decrypt, encrypt};
+use caeser_cipher_cli::{decrypt, encrypt, to_all_caps};
 use clap::Parser;
 
 /// CLI tool to encrypt and decrypt messages using the caeser cipher
@@ -26,7 +29,11 @@ struct Args {
     #[arg(short, long)]
     decrypt: bool,
 
-    /// The message to encrypt or decrypt
+    /// Convert the message to all caps
+    #[arg(short, long)]
+    caps: bool,
+
+    /// The message to encrypt, decrypt, or convert to all caps
     #[arg(short, long)]
     message: String,
 
@@ -43,7 +50,9 @@ fn main() {
         println!("{}", encrypt(&args.message, args.shift));
     } else if args.decrypt {
         println!("{}", decrypt(&args.message, args.shift));
+    } else if args.caps {
+        println!("{}", to_all_caps(&args.message));
     } else {
-        println!("Please specify either --encrypt or --decrypt");
+        println!("Please specify an action: --encrypt, --decrypt, or --caps");
     }
 }

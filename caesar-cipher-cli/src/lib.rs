@@ -22,3 +22,7 @@ pub fn encrypt(text: &str, shift: u8) -> String {
 pub fn decrypt(text: &str, shift: u8) -> String {
     encrypt(text, 26 - shift)
 }
+
+pub fn to_all_caps(s: &str) -> String {
+    s.to_uppercase()
+}

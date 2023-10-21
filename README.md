@@ -46,17 +46,17 @@ cargo run
 
 ## Rust Script
 You can do three things using my tool: **1) encrypt a string, 2) decrypt a string, and 3) make a string all caps**
-*** To encrypt a string**
+**To encrypt a string**
 ```
 cargo run --  --message "your string" --encrypt --shift "your shift value"
 ```
-*** To decrypt a string**
+**To decrypt a string**
 ```
 cargo run --  --message "your string" --decrypt --shift "your shift value"
 ```
 Here's an example of encrypting and decrypting the same message:
 <img width="916" alt="Screenshot 2023-10-21 at 6 02 14 PM" src="https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/assets/70416390/1e3b6359-4449-42c1-abe6-26dd26124f09">
-*** To make a string all caps**
+**To make a string all caps**
 ```
 cargo run --  --message "your string" --caps
 ```

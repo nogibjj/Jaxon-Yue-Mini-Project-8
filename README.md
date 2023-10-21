@@ -1,4 +1,4 @@
-# IDS 706 Mini Project 7
+# IDS 706 Mini Project 7 [![Tests](https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/actions/workflows/tests.yml/badge.svg)](https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/actions/workflows/tests.yml)
 
 ## Overview
 * This repository includes the components for Mini-Project 7 - Package a Rust Script into a Command-Line Tool.

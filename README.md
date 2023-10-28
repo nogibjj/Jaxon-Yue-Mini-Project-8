@@ -1,16 +1,18 @@
-# IDS 706 Mini Project 7 [![Tests](https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/actions/workflows/tests.yml/badge.svg)](https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/actions/workflows/tests.yml)
+# IDS 706 Mini Project 8 [![Tests](https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/actions/workflows/tests.yml/badge.svg)](https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/actions/workflows/tests.yml)
 
 ## Overview
-* This repository includes the components for Mini-Project 7 - Package a Rust Script into a Command-Line Tool.
+* This repository includes the components for Mini-Project 8 - Rewrite a Python Script in Rust.
 
 ## Goal
-* Package a Rust script with setuptools or a similar tool
-* Include a user guide on how to install and use the tool
+* Rewrite an existing Python script in Rust for data processing
+* Highlight improvements in speed and resource usage
 
 ## Key Elements in the Repo:
-* caesar-cipher-cli/src (contains the Rust script and main function)
-* caesar-cipher-cli/tests (contains the respective tests)
-* caesar-cipher-cli/Cargo.toml
+* project/src (contains the Rust script and main function)
+* project/tests (contains the respective tests)
+* project/Cargo.toml
+* project/dataset (contains the csv file)
+* mylib/lib.py (contains the Python version)
 * Makefile
 * Dockerfile
 * devcontainer
@@ -19,6 +21,13 @@
 * lint.sh
 * test.sh
 * bashrc
+
+## Data Processing Script
+* For this project, I wrote a script in Rust to get the 25%, 50%, and 75% percentile of column of the "Annual Wages" data table. Then, I wrote the same function in Python and compared the performance between Rust and Python.
+
+
+## Performance Comparison
+* With the same data frame operation, Rust has beat the Python version during all my tries, both in run time and CPU and memory usage.
 
 ## User Guide to Run
 1. Fork the repository at **https://github.com/nogibjj/rust-data-engineering**
@@ -44,25 +53,6 @@ cargo build
 cargo run
 ```
 
-## Rust Script
-You can do three things using my tool: **1) encrypt a string, 2) decrypt a string, and 3) make a string all caps**
-**To encrypt a string**
-```
-cargo run --  --message "your string" --encrypt --shift "your shift value"
-```
-**To decrypt a string**
-```
-cargo run --  --message "your string" --decrypt --shift "your shift value"
-```
-Here's an example of encrypting and decrypting the same message:
-<img width="916" alt="Screenshot 2023-10-21 at 6 02 14 PM" src="https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/assets/70416390/1e3b6359-4449-42c1-abe6-26dd26124f09">
-**To make a string all caps**
-```
-cargo run --  --message "your string" --caps
-```
-Here's an example of making a string all caps:
-<img width="895" alt="Screenshot 2023-10-21 at 6 02 22 PM" src="https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/assets/70416390/30fca7f5-f197-4c30-80b1-471d35756b6b">
-
 ## Makefile
 
 Each subdirectory project uses this style to make it easy to test and run
@@ -84,7 +74,7 @@ all: format lint test run
 ```
 
 I have passed all GitHub Actions as below:
-<img width="787" alt="Screenshot 2023-10-21 at 6 04 43 PM" src="https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/assets/70416390/8493a7a1-005a-4535-a532-b5e534cb2f22">
+
 
 
 ## References

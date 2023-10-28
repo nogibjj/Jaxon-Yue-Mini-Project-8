@@ -26,8 +26,10 @@
 * For this project, I wrote a script in Rust to get the 25%, 50%, and 75% percentile of column of the "Annual Wages" data table. Then, I wrote the same function in Python and compared the performance between Rust and Python.
 * With the same data frame operation, Rust has beat the Python version during all my tries, both in run time and CPU and memory usage.
 <img width="555" alt="Screenshot 2023-10-28 at 6 04 33 PM" src="https://github.com/nogibjj/Jaxon-Yue-Mini-Project-8/assets/70416390/de64fe26-5af6-492c-8ad6-5a4aecbdfca8">
+Rust script
 <img width="559" alt="Screenshot 2023-10-28 at 6 21 26 PM" src="https://github.com/nogibjj/Jaxon-Yue-Mini-Project-8/assets/70416390/b73ee2aa-8935-43e5-b287-90d04a2c00f2">
-While the Python version took about 3.87 ms, the Rust version only took about 1.10 ms, resulting in a 3.5x increase in speed.
+Python script
+* While the Python version took about 3.87 ms, the Rust version only took about 1.10 ms, resulting in a 3.5x increase in speed.
 
 ## User Guide to Run
 1. Fork the repository at **https://github.com/nogibjj/rust-data-engineering**

@@ -1,7 +1,7 @@
 # IDS 706 Mini Project 8 [![Tests](https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/actions/workflows/tests.yml/badge.svg)](https://github.com/jaxonyue/Jaxon-Yue-Mini-Project-7/actions/workflows/tests.yml)
 
 ## Overview
-* This repository includes the components for Mini-Project 8 - Rewrite a Python Script in Rust.
+* This repository includes the components for Mini-Project 8 - Rewrite a Python Script in Rust
 
 ## Goal
 * Rewrite an existing Python script in Rust for data processing

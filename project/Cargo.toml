@@ -1,5 +1,5 @@
 [package]
-name = "caeser-cipher-cli"
+name = "project"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.3.17", features = ["derive"] }
+csv = "1.1"
+statrs = "0.16"
